@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Mods | Minecraft Mod Development</title>
+      <meta name="description" content="">
+      <meta name="author" content="ink, cookbook, recipes">
+      <meta name="HandheldFriendly" content="True">
+      <meta name="MobileOptimized" content="320">
+      <meta name="mobile-web-app-capable" content="yes">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+      <link rel="shortcut icon" href="img/favicon.ico">
+      <link rel="stylesheet" type="text/css" href="http://cdn.ink.sapo.pt/3.1.10/css/ink-flex.min.css">
+      <link rel="stylesheet" type="text/css" href="http://cdn.ink.sapo.pt/3.1.10/css/font-awesome.min.css">
+      <!--[if lt IE 9 ]>
+      <link rel="stylesheet" href="http://cdn.ink.sapo.pt/3.1.10/css/ink-ie.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
+      <![endif]-->
+      <script type="text/javascript" src="http://cdn.ink.sapo.pt/3.1.10/js/modernizr.js"></script>
+      <script type="text/javascript">
+         Modernizr.load({
+           test: Modernizr.flexbox,
+           nope : 'http://cdn.ink.sapo.pt/3.1.10/css/ink-legacy.min.css'
+         });
+      </script>
+      <script type="text/javascript" src="http://cdn.ink.sapo.pt/3.1.10/js/holder.js"></script>
+      <script type="text/javascript" src="http://cdn.ink.sapo.pt/3.1.10/js/ink-all.min.js"></script>
+      <script type="text/javascript" src="http://cdn.ink.sapo.pt/3.1.10/js/autoload.js"></script>
+      <style type="text/css">
+         body {
+         background: #ededed;
+         }
+         header {
+         border-bottom: 1px solid #cecece;
+         }
+         header h1 small:before  {
+         content: "|";
+         margin: 0 0.5em;
+         font-size: 1.6em;
+         }
+         footer {
+         background: #ccc;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="ink-grid">
+         <!--[if lte IE 9 ]>
+         <div class="ink-alert basic" role="alert">
+            <button class="ink-dismiss">&times;</button>
+            <p>
+               <strong>You are using an outdated Internet Explorer version.</strong>
+               Please <a href="http://browsehappy.com/">upgrade to a modern browser</a> to improve your web experience.
+            </p>
+         </div>
+         -->
+         <header class="vertical-space">
+            <h1>MMD</h1>
+            <nav class="ink-navigation">
+               <ul class="menu horizontal black">
+                  <li><a href="index.html">Home</a></li>
+                  <li class="active"><a>Mods</a></li>
+                  <li><a href="members.html">Members</a></li>
+                  <li><a href="https://github.com/MinecraftModDevelopment/">Github</a></li>
+                  <li><a href="https://twitter.com/MCModDev">Twitter</a></li>
+                  <li><a href="https://discord.gg/wfKGSsB">Discord</a></li>
+               </ul>
+            </nav>
+         </header>
+         <div class="column-group vertical-space">
+            <div class="all-100">
+               <img src="img/logo.png">
+            </div>
+         </div>
+         <h1>Mods</h1>
+         <div class="column-group gutters">
+            <div class="xlarge-25 large-25 all-50">
+               <figure class="ink-image">
+                  <figcaption class="dark">
+                     <center><b>Base Metals</b></center>
+                  </figcaption>
+                  <a href="https://github.com/MinecraftModDevelopment/BaseMetals"><img src="img/basemetals.png"></a>
+               </figure>
+               <p class="quarter-top-space">Adds many common metals and alloys to Minecraft, such as copper, silver, and steel.</p>
+            </div>
+            <div class="xlarge-25 large-25 all-50">
+               <figure class="ink-image">
+                  <figcaption class="dark">
+                     <center><b>Modern Metals</b></center>
+                  </figcaption>
+                  <a href="https://github.com/MinecraftModDevelopment/ModernMetals"><img src="img/modernmetals.png"></a>
+               </figure>
+               <p class="quarter-top-space">Addon for Base Metals supporting Modern Metals.</p>
+            </div>
+            <div class="xlarge-25 large-25 all-50">
+               <figure class="ink-image">
+                  <figcaption class="dark">
+                     <center><b>Nether Metals</b></center>
+                  </figcaption>
+                  <a href="https://github.com/MinecraftModDevelopment/NetherMetals"><img src="img/nethermetals.png"></a>
+               </figure>
+               <p class="quarter-top-space">Nether Metals adds vanilla and modded ores (optional) to the Nether dimension</p>
+            </div>
+            <div class="xlarge-25 large-25 all-50">
+               <figure class="ink-image">
+                  <figcaption class="dark">
+                     <center><b>End Metals</b></center>
+                  </figcaption>
+                  <a href="https://github.com/MinecraftModDevelopment/EndMetals"><img src="img/endmetals.png"></a>
+               </figure>
+               <p class="quarter-top-space">End Metals adds vanilla and modded ores (optional) to the End dimension.</p>
+            </div>
+         </div>
+         <div class="column-group gutters">
+            <div class="xlarge-25 large-25 all-50">
+               <figure class="ink-image">
+                  <figcaption class="dark">
+                     <center><b>Modularity</b></center>
+                  </figcaption>
+                  <a href="https://github.com/MinecraftModDevelopment/?utf8=✓&query=Modularity"><img src="img/modularity.png"></a>
+               </figure>
+               <p class="quarter-top-space">Mods based on machines and technology</p>
+            </div>
+            <div class="xlarge-25 large-25 all-50">
+               <figure class="ink-image">
+                  <figcaption class="dark">
+                     <center><b>Better Agriculture</b></center>
+                  </figcaption>
+                  <a href="#"><img src="img/missing.png"></a>
+               </figure>
+               <p class="quarter-top-space">Better Agriculture is a companion mod for Forestry and Pam's Harvestcraft.</p>
+            </div>
+            <div class="xlarge-25 large-25 all-50">
+               <figure class="ink-image">
+                  <figcaption class="dark">
+                     <center><b>Lootable Bodies</b></center>
+                  </figcaption>
+                  <a href="#"><img src="img/missing.png"></a>
+               </figure>
+               <p class="quarter-top-space">Saves your items on a lootable corpse when you die.</p>
+            </div>
+            <div class="xlarge-25 large-25 all-50">
+               <figure class="ink-image">
+                  <figcaption class="dark">
+                     <center><b>Minecraft Mineralogy</b></center>
+                  </figcaption>
+                  <a href="#"><img src="img/missing.png"></a>
+               </figure>
+               <p class="quarter-top-space">A geology-inspired mod for Minecraft that adds various types of real-world rocks.</p>
+            </div>
+         </div>
+
+         <div class="column-group gutters">
+            <div class="xlarge-25 large-25 all-50">
+               <figure class="ink-image">
+                  <figcaption class="dark">
+                     <center><b>AdditionalLootTables</b></center>
+                  </figcaption>
+                  <a href="#"><img src="img/missing.png"></a>
+               </figure>
+               <p class="quarter-top-space">An easier way to add custom loot tables to Minecraft 1.9 (useable by other mods).</p>
+            </div>
+            <div class="xlarge-25 large-25 all-50">
+               <figure class="ink-image">
+                  <figcaption class="dark">
+                     <center><b>Electric Advantage</b></center>
+                  </figcaption>
+                  <a href="#"><img src="img/missing.png"></a>
+               </figure>
+               <p class="quarter-top-space">An electric-powered technology mod based on the Power Advantage API.</p>
+            </div>
+            <div class="xlarge-25 large-25 all-50">
+               <figure class="ink-image">
+                  <figcaption class="dark">
+                     <center><b>Power Advantage</b></center>
+                  </figcaption>
+                  <a href="#"><img src="img/missing.png"></a>
+               </figure>
+               <p class="quarter-top-space">Technology mod API for Minecraft 1.8-1.10.2</p>
+            </div>
+            <div class="xlarge-25 large-25 all-50">
+               <figure class="ink-image">
+                  <figcaption class="dark">
+                     <center><b>Steam Advantage</b></center>
+                  </figcaption>
+                  <a href="#"><img src="img/missing.png"></a>
+               </figure>
+               <p class="quarter-top-space">A Power Advantage add-on that adds steam-powered technology to your Minecraft game</p>
+            </div>
+         </div>
+
+
+         <div class="column-group gutters">
+            <div class="xlarge-25 large-25 all-50">
+               <figure class="ink-image">
+                  <figcaption class="dark">
+                     <center><b>Wonderful Wands & Wizarding Robes</b></center>
+                  </figcaption>
+                  <a href="#"><img src="img/missing.png"></a>
+               </figure>
+               <p class="quarter-top-space">Wonderful Wands & Wizarding Robes add a magical flair to your Minecraft game without breaking it.</p>
+            </div>
+            <div class="xlarge-25 large-25 all-50">
+               <figure class="ink-image">
+                  <figcaption class="dark">
+                     <center><b>Vanilla Tweaks</b></center>
+                  </figcaption>
+                  <a href="#"><img src="img/missing.png"></a>
+               </figure>
+               <p class="quarter-top-space">Collection of useful (I think) tweaks for vanilla minecraft as a forge mod</p>
+            </div>
+            <div class="xlarge-25 large-25 all-50">
+               <figure class="ink-image">
+                  <figcaption class="dark">
+                     <center><b>OreSpawn</b></center>
+                  </figcaption>
+                  <a href="#"><img src="img/missing.png"></a>
+               </figure>
+               <p class="quarter-top-space">Minecraft library mod that provides customizable spawning of ores in Minecraft.</p>
+            </div>
+            <div class="xlarge-25 large-25 all-50">
+               <figure class="ink-image">
+                  <figcaption class="dark">
+                     <center><b>Hemp Farmer</b></center>
+                  </figcaption>
+                  <a href="#"><img src="img/missing.png"></a>
+               </figure>
+               <p class="quarter-top-space">Adds hemp items to Minecraft.</p>
+            </div>
+         </div>
+      </div>
+      <footer class="clearfix">
+         <div class="ink-grid">
+            <ul class="unstyled inline half-vertical-space">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="mod.html">Mods</a></li>
+               <li><a href="members.html">Members</a></li>
+               <li><a href="https://github.com/MinecraftModDevelopment/">Github</a></li>
+               <li><a href="https://twitter.com/MCModDev">Twitter</a></li>
+               <li><a href="https://discord.gg/wfKGSsB">Discord</a></li>
+            </ul>
+            <p class="note">Copyright &copy Minecraft Mod Development 2016</p>
+         </div>
+      </footer>
+   </body>
+</html>

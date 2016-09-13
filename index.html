@@ -1,385 +1,110 @@
-<!doctype html>
-<!--
-  Material Design Lite
-  Copyright 2015 Google Inc. All rights reserved.
-
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-      https://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License
--->
+<!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Home | Minecraft Mod Development</title>
+        <meta name="description" content="">
+        <meta name="author" content="ink, cookbook, recipes">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Minecraft Mod Development">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Minecraft Mod Development</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.grey-indigo.min.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-</head>
+        <link rel="shortcut icon" href="img/favicon.ico">
 
-<body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
-            <div class="mdl-layout__header-row portfolio-logo-row">
-                <span class="mdl-layout__title">
-                    <div class="portfolio-logo"></div>
-                    <span class="mdl-layout__title">Minecraft Mod Development</span>
-                </span>
+        <link rel="stylesheet" type="text/css" href="http://cdn.ink.sapo.pt/3.1.10/css/ink-flex.min.css">
+        <link rel="stylesheet" type="text/css" href="http://cdn.ink.sapo.pt/3.1.10/css/font-awesome.min.css">
+
+        <!--[if lt IE 9 ]>
+            <link rel="stylesheet" href="http://cdn.ink.sapo.pt/3.1.10/css/ink-ie.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
+        <![endif]-->
+
+        <script type="text/javascript" src="http://cdn.ink.sapo.pt/3.1.10/js/modernizr.js"></script>
+        <script type="text/javascript">
+            Modernizr.load({
+              test: Modernizr.flexbox,
+              nope : 'http://cdn.ink.sapo.pt/3.1.10/css/ink-legacy.min.css'
+            });
+        </script>
+
+        <script type="text/javascript" src="http://cdn.ink.sapo.pt/3.1.10/js/holder.js"></script>
+        <script type="text/javascript" src="http://cdn.ink.sapo.pt/3.1.10/js/ink-all.min.js"></script>
+        <script type="text/javascript" src="http://cdn.ink.sapo.pt/3.1.10/js/autoload.js"></script>
+
+        <style type="text/css">
+
+            body {
+                background: #ededed;
+            }
+
+            header {
+                border-bottom: 1px solid #cecece;
+            }
+
+                        header h1 small:before  {
+                            content: "|";
+                            margin: 0 0.5em;
+                            font-size: 1.6em;
+                        }
+            footer {
+                background: #ccc;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="ink-grid">
+
+            <!--[if lte IE 9 ]>
+            <div class="ink-alert basic" role="alert">
+                <button class="ink-dismiss">&times;</button>
+                <p>
+                    <strong>You are using an outdated Internet Explorer version.</strong>
+                    Please <a href="http://browsehappy.com/">upgrade to a modern browser</a> to improve your web experience.
+                </p>
             </div>
-            <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
-                <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                    <a class="mdl-navigation__link  is-active" href="index.html">Home</a>
-                    <a class="mdl-navigation__link" href="blog.html">Mods</a>
-                    <a class="mdl-navigation__link" href="about.html">About</a>
-                    <a class="mdl-navigation__link" href="contact.html">Contact</a>
-                </nav>
-            </div>
-        </header>
-        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                <a class="mdl-navigation__link is-active" href="index.html">Home</a>
-                <a class="mdl-navigation__link" href="blog.html">Mods</a>
-                <a class="mdl-navigation__link" href="about.html">About</a>
-                <a class="mdl-navigation__link" href="contact.html">Contact</a>
-            </nav>
-        </div>
-        <main class="mdl-layout__content">
-            <div class="mdl-grid portfolio-max-width">
-                <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
+            -->
 
-
-                </div>
-
-
-                <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text"></h2>
-                    </div>
-
-                </div>
-
-                <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Looking for Language Translators</h2>
-                    </div>
-                    <div class="mdl-card__media">
-                        <a href="#"> <img class="article-image" src=" images/example-blog02.jpg" border="0" alt=""></a>
-                    </div>
-
-                    <div class="mdl-card__supporting-text">
-                        <p>Message any MMD member about helping out on Discord or just go ahead and check out the code at our github page.</p>
-                    </div>
-
-
-
-                </div>
-
-
-                <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
-                    <div class="mdl-card__media">
-                        <img class="article-image" src=" images/example-blog07.jpg" border="0" alt="">
-                    </div>
-                    <div class="mdl-card__title ">
-                        <h2 class="mdl-card__title-text">Source Code</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        https://github.com/MinecraftModDevelopment.
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/MinecraftModDevelopment">View Source Code</a>
-                    </div>
-                </div>
-
-                <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Join Us on Discord</h2>
-                    </div>
-                    <div class="mdl-card__media">
-                        <a href="#"> <img class="article-image" src=" images/example-blog06.jpg" border="0" alt=""></a>
-                    </div>
-
-                    <div class="mdl-card__supporting-text">
-                        <p>You can join our Discord Server Using this invite link: LINK</p>
-                    </div>
-                    <div>
-                                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://discord.gg/0zDmvoH5AXGLMBZT">Join</a>
-                                            </div>
-                </div>
-
-
-
-                <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
-
-                    <div class="mdl-card__title">
-
-
-            <div class="mdl-grid portfolio-max-width">
-                <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
-                    <div class="mdl-card__media mdl-cell mdl-cell--12-col-tablet">
-                        <img class="article-image" src=" https://avatars3.githubusercontent.com/u/21030588?v=3&s=200" border="0" alt="">
-                    </div>
-                    <div class="mdl-cell mdl-cell--8-col">
-                        <h2 class="mdl-card__title-text">Welcome to Minecraft Mod Development</h2>
-
-                        <div class="mdl-card__supporting-text no-left-padding">
-                            <p>Welcome to our new members and more.</p>
-
-                        </div>
-                    </div>
-                </div>
-
-
-<!-- Three Line List with secondary info and action -->
-<style>
-.demo-list-three {
-  width: 100%;
-
-
-
-}
-</style>
-
-<ul class="demo-list-three mdl-list">
-  <li class="mdl-list__item mdl-list__item--three-line">
-    <span class="mdl-list__item-primary-content">
-      <i class="material-icons mdl-list__item-avatar">person</i>
-      <span>jriwanek </span>
-      <span class="mdl-list__item-text-body">
-        Developer.
-      </span>
-    </span>
-        <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">settings_ethernet</i></a>
-    </span>
-        <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">account_circle</i></a>
-    </span>
-        <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">group_work</i></a>
-    </span>
-  </li>
-  <li class="mdl-list__item mdl-list__item--three-line">
-    <span class="mdl-list__item-primary-content">
-      <i class="material-icons  mdl-list__item-avatar">person</i>
-      <span>iLexiconn</span>
-      <span class="mdl-list__item-text-body">
-        Developer.
-      </span>
-    </span>
-    <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">settings_ethernet</i></a>
-    </span>
-        <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">account_circle</i></a>
-    </span>
-        <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">group_work</i></a>
-    </span>
-  </li>
-  <li class="mdl-list__item mdl-list__item--three-line">
-    <span class="mdl-list__item-primary-content">
-      <i class="material-icons  mdl-list__item-avatar">person</i>
-      <span>knoxhack</span>
-      <span class="mdl-list__item-text-body">
-        Developer, Web Developer, Server Admin.
-      </span>
-    </span>
-        <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">settings_ethernet</i></a>
-    </span>
-        <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">account_circle</i></a>
-    </span>
-        <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">group_work</i></a>
-    </span>
-  </li>
-  <li class="mdl-list__item mdl-list__item--three-line">
-    <span class="mdl-list__item-primary-content">
-      <i class="material-icons  mdl-list__item-avatar">person</i>
-      <span>TheCodedOne</span>
-      <span class="mdl-list__item-text-body">
-        Developer, Server Admin.
-      </span>
-    </span>
-    <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">settings_ethernet</i></a>
-    </span>
-        <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">account_circle</i></a>
-    </span>
-        <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">group_work</i></a>
-    </span>
-  </li>
-
-  <li class="mdl-list__item mdl-list__item--three-line">
-    <span class="mdl-list__item-primary-content">
-      <i class="material-icons mdl-list__item-avatar">person</i>
-      <span>darkhax</span>
-      <span class="mdl-list__item-text-body">
-        Contributor.
-      </span>
-    </span>
-    <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">settings_ethernet</i></a>
-    </span>
-        <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">account_circle</i></a>
-    </span>
-        <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">group_work</i></a>
-    </span>
-  </li>
-  <li class="mdl-list__item mdl-list__item--three-line">
-    <span class="mdl-list__item-primary-content">
-      <i class="material-icons  mdl-list__item-avatar">person</i>
-      <span>cyanobacterium</span>
-      <span class="mdl-list__item-text-body">
-        Former Developer.
-      </span>
-    </span>
-    <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">settings_ethernet</i></a>
-    </span>
-        <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">account_circle</i></a>
-    </span>
-        <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">group_work</i></a>
-    </span>
-  </li>
-  <li class="mdl-list__item mdl-list__item--three-line">
-    <span class="mdl-list__item-primary-content">
-      <i class="material-icons  mdl-list__item-avatar">person</i>
-      <span>SeqSEE</span>
-      <span class="mdl-list__item-text-body">
-        Developer.
-      </span>
-    </span>
-    <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">settings_ethernet</i></a>
-    </span>
-        <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">account_circle</i></a>
-    </span>
-        <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">group_work</i></a>
-    </span>
-  </li>
-
-
-  <li class="mdl-list__item mdl-list__item--three-line">
-    <span class="mdl-list__item-primary-content">
-      <i class="material-icons  mdl-list__item-avatar">person</i>
-      <span>lclc98</span>
-      <span class="mdl-list__item-text-body">
-        Developer.
-      </span>
-    </span>
-    <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">settings_ethernet</i></a>
-    </span>
-        <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">account_circle</i></a>
-    </span>
-        <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">group_work</i></a>
-    </span>
-  </li>
-  <li class="mdl-list__item mdl-list__item--three-line">
-    <span class="mdl-list__item-primary-content">
-      <i class="material-icons  mdl-list__item-avatar">person</i>
-      <span>Faenum</span>
-      <span class="mdl-list__item-text-body">
-        Artist.
-      </span>
-    </span>
-    <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">settings_ethernet</i></a>
-    </span>
-        <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">account_circle</i></a>
-    </span>
-        <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">group_work</i></a>
-    </span>
-  </li>
-
-  <li class="mdl-list__item mdl-list__item--three-line">
-    <span class="mdl-list__item-primary-content">
-      <i class="material-icons  mdl-list__item-avatar">person</i>
-      <span>cap10zeus</span>
-      <span class="mdl-list__item-text-body">
-        Artist.
-      </span>
-    </span>
-    <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">settings_ethernet</i></a>
-    </span>
-        <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">account_circle</i></a>
-    </span>
-        <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">group_work</i></a>
-    </span>
-  </li>
-  <li class="mdl-list__item mdl-list__item--three-line">
-    <span class="mdl-list__item-primary-content">
-      <i class="material-icons  mdl-list__item-avatar">person</i>
-      <span>Zaweri</span>
-      <span class="mdl-list__item-text-body">
-        Translators.
-      </span>
-    </span>
-    <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">settings_ethernet</i></a>
-    </span>
-        <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">account_circle</i></a>
-    </span>
-        <span class="mdl-list__item-secondary-content">
-      <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">group_work</i></a>
-    </span>
-  </li>
-</ul>
-
-                    </div>
-                </div>
-
-
-
-
-
-
-            </div>
-</div>
-            <footer class="mdl-mini-footer">
-                <div class="mdl-mini-footer__left-section">
-                    <div class="mdl-logo">Minecraft Mod Development @ Made by: Knoxhack</div>
-                </div>
-                <div class="mdl-mini-footer__right-section">
-                    <ul class="mdl-mini-footer__link-list">
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Privacy & License</a></li>
+            <header class="vertical-space">
+                <h1>MMD</h1>
+                <nav class="ink-navigation">
+                    <ul class="menu horizontal black">
+                        <li class="active"><a>Home</a></li>
+                        <li><a href="mod.html">Mods</a></li>
+                        <li><a href="members.html">Members</a></li>
+                        <li><a href="https://github.com/MinecraftModDevelopment/">Github</a></li>
+                        <li><a href="https://twitter.com/MCModDev">Twitter</a></li>
+                        <li><a href="https://discord.gg/wfKGSsB">Discord</a></li>
                     </ul>
+                </nav>
+            </header>
+
+            <div class="column-group vertical-space">
+                <div class="all-100">
+                    <img src="img/logo.png">
                 </div>
-            </footer>
-        </main>
-    </div>
-    <script src="https://code.getmdl.io/1.2.0/material.min.js"></script>
-</body>
+            </div>
+
+                <h1>Minecraft Mod Development</h1>
+                </div>
+        </div>
+        <footer class="clearfix">
+            <div class="ink-grid">
+                <ul class="unstyled inline half-vertical-space">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="mod.html">Mods</a></li>
+                    <li><a href="members.html">Members</a></li>
+                    <li><a href="https://github.com/MinecraftModDevelopment/">Github</a></li>
+                    <li><a href="https://twitter.com/MCModDev">Twitter</a></li>
+                    <li><a href="https://discord.gg/wfKGSsB">Discord</a></li>
+                </ul>
+                <p class="note">Copyright &copy Minecraft Mod Development 2016</p>
+            </div>
+        </footer>
+    </body>
 
 </html>
