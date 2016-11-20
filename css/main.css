@@ -1,0 +1,33 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #ededed;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -120px;
+  overflow: auto;
+}
+
+header {
+  border-bottom: 1px solid #cecece;
+}
+
+header h1 small:before {
+  content: "|";
+  margin: 0 0.5em;
+  font-size: 1.6em;
+}
+
+.push, footer {
+  height: 120px;
+}
+
+footer {
+  background-color: #ccc;
+}
